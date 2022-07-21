@@ -1,0 +1,376 @@
+/* 网页适配移动端 */
+@media screen and (max-width: 1390px) and (min-width:701px){
+  #boy .nav {
+    display: none;
+  }
+  #boy .content {
+    
+    width: 600px;
+    height: 100%;
+    margin: 0%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+  }
+  #boy .essay {
+    
+    margin: 0%;
+    width: 600px;
+    margin-top: 60px;
+  }
+  #boy  .copyright{
+    width: 600px;
+    height: 100%;
+  }
+  #boy {
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 700px) and (min-width:500px){
+  #boy .nav {
+    display: none;
+  }
+  #boy .content {
+    
+    width: 450px;
+    height: 100%;
+    margin: 0%;
+    
+    /* background-color: rgba(255, 255, 255, 0.5); */
+  }
+  #boy .essay {
+    margin: 0%;
+    width: 450px;
+    margin-top: 60px;
+  }
+  #boy  .copyright{
+    width: 450px;
+    height: 100%;
+  }
+  #boy {
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 500px) and (min-width:300px){
+  #boy .nav {
+    display: none;
+  }
+  #boy .content {
+  
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+  }
+  #boy .essay {
+    margin: 0%;
+    margin-top: 60px;
+    
+  }
+  #boy  .copyright{
+    width: 100%;
+    height: 100%;
+  }
+  #boy {
+    width: 100%;
+  }
+
+}
+@media screen and (min-width: 1400px){
+  #boy .nav-yd {
+    display: none;
+
+  }
+}
+.nav-yd {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: .8;
+}
+.nav-yd ul {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  list-style: none;
+}
+.nav-yd .logo img {
+  width: calc(100% - 40px);
+  max-height: 40px;
+  max-width: 120px;
+  min-width: 60px;
+}
+.nav-yd .logo {
+  /* padding-left: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-yd li {
+  width: 100%;
+  overflow: hidden;
+  /* padding: 0 5px; */
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+
+  background: rgb(250, 250, 246);
+  
+
+}
+.nav-yd li:hover {
+  background: rgb(177, 177, 177);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "kafont";
+  src: url("https://cdn.repository.webfont.com/webfonts/vipjs/10/144/60b8e2e3344aa82ea7db2b46.gif");
+  src: url("https://cdn.repository.webfont.com/webfonts/vipjs/10/144/60b8e2e3344aa82ea7db2b46.gif?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.repository.webfont.com/webfonts/vipjs/10/144/60b8e2e3344aa82ea7db2b46.png")
+      format("woff2"),
+    url("https://cdn.repository.webfont.com/webfonts/vipjs/10/144/60b8e2e3344aa82ea7db2b46.bmp")
+      format("woff"),
+    url("https://cdn.repository.webfont.com/webfonts/vipjs/10/144/60b8e2e3344aa82ea7db2b46.jpg")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: auto;
+  height: auto;
+  background: url(../img/bg.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #bcffac9d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* 内容模块占据页面大小 */
+.content {
+  /* height: 100vh; */
+  display: flex;
+  width: 1400px;
+  height: 100vh;
+  /* background-color: #fff; */
+}
+/* 版权模块与内容模块宽度一致 */
+.copyright {
+  width: 1400px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* 导航栏有两个板块竖向排列-导航整体与文章横向排列 */
+.nav {
+  /* background-color: rgba(212, 223, 62, 0.479); */
+  width: 350px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: visible;
+  overflow-y: auto;
+  /* flex:1; */
+ 
+  /* padding-bottom: 40px; */
+}
+.nav-box1 {
+  /* height: 400px; */
+  width: 100%;
+  /* background-color: rgb(212, 35, 35); */
+}
+.nav-box1 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.nav-box1 .logo img {
+  width: 150px;
+  opacity: 0.8;
+}
+.nav-box1 .nav-new {
+  /* height: 200px; */
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.nav-new ul {
+  list-style: none;
+  padding: 20px 0px;
+}
+.nav-new ul li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 1em;
+
+
+}
+ul a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+ul span {
+  font-style: none;
+  opacity: 0.6;
+}
+body .content .nav .nav-box1 ul .home span {
+  opacity: 1;
+}
+body .content li span {
+  font-size: 14px;
+}
+.nav-new ul li:hover {
+  background-color: rgb(82, 82, 82, 0.6);
+}
+.nav-box2 {
+  margin-top: 10px;
+  /* height: 500px; */
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.6);
+  margin-bottom: 200px;
+}
+.nav-box2 .head-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 210px;
+  flex-direction: column;
+}
+.nav-box2 .head-img img {
+  display: block;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 16px grey;
+  opacity: 0.8;
+  
+}
+
+.nav-box2 .head-img span {
+  display: block;
+  margin-top: 8px;
+  font-size: 26px;
+  font-weight: 900;
+}
+.nav-box2 .music {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+}
+.nav-box2 .music .music-- {
+    
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 0.7;
+  width: 250px;
+}
+.link {
+    margin: 29px;
+    /* display: flex; */
+}
+.link table {
+    width: 100%;
+    /* flex: 1; */
+    text-align: center;
+    opacity: .7;
+    /* width: 100px; */
+    /* margin: 0px 10px; */
+}
+.essay {
+  /* display: none; */
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 100vh;
+  margin-left: 10px;
+  backdrop-filter: saturate(300%) blur(5px);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.skinbox {
+  width: 800px;
+  height: 500px;
+  /* opacity: .4; */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.776);
+  /* float: left; */
+  position: fixed;
+  z-index: 30;
+  top: calc(100vh / 2 - 250px);
+  left: calc(100% / 2 - 400px);
+  overflow-y: scroll;
+  display: none;
+}
+.skinbox img{
+  width: 300px;
+  height: 168px;
+  position: absolute;
+  border-radius: 30px;
+}
+.skinbox svg ,#false-1{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+

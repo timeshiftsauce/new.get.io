@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg.jpg) no-repeat bottom right;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #70baff;
+  min-height: 395px;
+}
+.nr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.box {
+  min-width: 280px;
+  min-height: 395px;
+  width: calc(60vh * 0.75);
+  height: 60vh;
+  background: linear-gradient(
+    110deg,
+    rgba(204, 253, 243, 0.815) 30%,
+    rgba(156, 156, 241, 0.815) 70%
+  );
+  border-radius: 15px;
+  box-shadow: 20px 20px 30px #b0a6e6bd;
+  display: flex;
+  flex-direction: column;
+}
+#logo img {
+  min-height: 32px;
+  min-width: 94px;
+  width: calc(60vh * 0.4);
+  height: auto;
+  margin-top: calc(60vh * 0.02);
+  margin-left: 10px;
+  opacity: 0.815;
+  -webkit-user-drag: none;
+}
+hr {
+  margin-top: 6px;
+}
+h3 {
+  min-block-size: 14px;
+  margin-top: calc(60vh * 0.02);
+  margin-left: 10px;
+  font-size: calc(60vh * 0.05 - 3px);
+}
+.nav {
+  display: block;
+  text-decoration: none;
+  padding-bottom: calc(60vh * 0.3 - 60px);
+}
+.nav div {
+  min-width: 170px;
+  min-height: 170px;
+  background: linear-gradient(45deg, #bcff9dab 30%, #ffc0fc9c 70%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.nav span {
+  text-align: center;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.692);
+  font-weight: 800;
+}
+
+.nav div:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.box2 {
+  margin-top: calc(60vh*0.125);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ------------------------------------------------------------------ */
+
+
+.doc-font {
+    background-color: #ffffff;
+    font-size: 12px;
+    /* padding: 30px 0; */
+    /* float:; */
+    display: flex;
+    height: 60px;
+    align-items: center;
+    
+}
+.one-font {
+    width: auto;
+   
+}
+.doc-font .ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.doc-font ul li {
+    /* line-height: 60px; */
+    color: #666;
+    /* font-weight: 300px; */
+    display: inline-block;
+    margin-left:5px;
+}
+li a {
+    text-decoration: none;
+    color: #666;
+}
+.split-line {
+    margin-left: 5px;
+    color: #c8c8c8;
+    font-size: 12px;
+}
+li a:hover {
+    text-decoration: underline;
+}
+
